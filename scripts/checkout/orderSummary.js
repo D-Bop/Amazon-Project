@@ -5,12 +5,6 @@ import {hello} from 'https://unpkg.com/supersimpledev@1.0.1/hello.esm.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import { deliveryOptions, getDeliveryOption } from "../../data/deliveryOption.js";
 import { renderPaymentSummary } from "./paymentSummary.js";
-hello();
-
-const today = dayjs();
-const delievryDate = today.add(7, 'days');
-console.log(delievryDate.format('dddd, MMMM D'));
-
 
 export function renderOrderSummary() {
   let cartSummaryHTML = '';
