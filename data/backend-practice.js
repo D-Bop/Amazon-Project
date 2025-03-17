@@ -11,3 +11,10 @@ xhr.open('GET', "https://supersimplebackend.dev");
 
 // sending the message to the backend
 xhr.send();
+
+// The use of fetch
+// fetch is a promise that uses the get request automatically and also sends your request to the backend. Your response can also be saved as a parameter in the then function. e.g:
+
+fetch("https://supersimplebackend.dev").then((response) => {
+    console.log(response);
+})
